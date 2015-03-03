@@ -1,0 +1,39 @@
+
+body {
+	margin: 0 auto;
+	max-width: 380px;
+}
+div {display:block;}
+.form-row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.form-row {
+	margin: 10px 0;
+}
+.new-kadastr-form input[type='text'], .new-kadastr-form input[type='number'], .new-kadastr-form label {
+	display: inline-block;
+}
+label {
+	
+	width: 200px;
+}
+.new-kadastr-form h4 {
+	border-bottom: 1px solid #444;
+}
+.coords label {
+	width: 30px;
+}
+.form-section {
+	
+	margin-bottom: 10px;
+}
+.del-coord {
+	color: #f00;
+	text-decoration: none;
+
+}
+.del-coord:after {
+	content: 'x';
+}
