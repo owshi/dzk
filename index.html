@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>АС ДЗК</h1>
+    <hr>
+    <h2>Список земельних ділянок</h2>
+    <button class='show-list'>Показати список земельних ділянок</button>
+    <div class="kadastr-table">
+    </div>
+    <h2>Зареєструвати нову ділянку</h2>
+    <div class="new-kadastr-form">
+        <h3>Введіть дані</h3>
+        <form action="#">
+            <div class='form-row'>
+                <label for="">Кадастровий номер</label>
+                <input type="text" style='width:80px' pattern="\d*" maxlength="10">:<input type="text" style='width:20px' pattern="\d*" maxlength="2">:<input type="text" style='width:25px' pattern="\d*" maxlength="3">:<input type="text" style='width:35px' pattern="\d*" maxlength="4">
+            </div>
+            <div class="form-section">
+                <h4>Розташування</h4>
+                <div class='form-row'>
+                    <label for="">Область</label>
+                    <select name="" id="">
+                    	 <option value="">...</option>
+                        <option value="">Вінницька область</option>
+                        <option value="">Волинська область</option>
+                        <option value="">Дніпропетровська область</option>
+                        <option value="">Донецька область</option>
+                        <option value="">Житомирська область</option>
+                        <option value="">Закарпатська область</option>
+                        <option value="">Запорізька область</option>
+                        <option value="">Івано-Франківська область</option>
+                        <option value="">Київська область</option>
+                        <option value="">Кіровоградська область</option>
+                        <option value="">Крим</option>
+                        <option value="">Луганська область</option>
+                        <option value="">Львівська область</option>
+                        <option value="">Миколаївська область</option>
+                        <option value="">Одеська область</option>
+                        <option value="">Полтавська область</option>
+                        <option value="">Рівненська область</option>
+                        <option value="">Сумська область</option>
+                        <option value="">Тернопільська область</option>
+                        <option value="">Харківська область</option>
+                        <option value="">Херсонська область</option>
+                        <option value="">Хмельницька область</option>
+                        <option value="">Черкаська область</option>
+                        <option value="">Чернігівська область</option>
+                        <option value="">Чернівецька область</option>
+                    </select>
+                </div>
+                <div class='form-row'>
+                    <label for="">Район</label>
+                    <input id='' type="text">
+                </div>
+                <div class='form-row'>
+                    <label for="">Місто / Село / Селище</label>
+                    <input id='' type="text">
+                </div>
+                <div class='form-row'>
+                    <label for="">Адреса</label>
+                    <input id='' type="text">
+                </div>
+            </div>
+            <div class="form-section">
+                <h4>Геодезичні дані</h4>
+                <div class='form-row'>
+                    <label for="">Площа</label>
+                    <input id='' type="text">
+                </div>
+                <h5>Координати</h5>
+                <div class="coords">
+                    <div class="coord-row">
+                        <label for="">1.</label>
+                        <input id='' type="text">
+                        <a href="#" class="del-coord"></a>
+                    </div>
+
+                </div>
+                <a href="#">Додати точку</a>
+            </div>
+            <div class="form-section">
+                <h4>Якість грунтів</h4>
+                <div class='form-row'>
+                    <label for="">Агрогрупи грунтів</label>
+                    <input id='' type="text">
+                </div>
+                <div class='form-row'>
+                    <label for="">Бал бонітету</label>
+                    <input id='' type="text">
+                </div>
+            </div>
+            <div class="form-section">
+                <h4>Правові дані</h4>
+                <div class='form-row'>
+                    <label for="">Цільове призначення</label>
+                    <input id='' type="text">
+                </div>
+                <div class="form-row">
+                    <label for=""></label>
+                    <select name="" id="">
+                        <option value="">Державна власність</option>
+                        <option value="">Комунальна власність</option>
+                        <option value="">Приватна власність</option>
+                        <option value="">Постійне користування</option>
+                        <option value="">Оренда</option>
+                    </select>
+                </div>
+                <h5>Дані власника/користувача</h5>
+                <select name="" id="">
+                    <option value="">Фізична особа</option>
+                    <option value="">Юридична особа</option>
+
+                </select>
+                <div class='form-row'>
+                    <label for="">Призвище</label>
+                    <input id='' type="text">
+                </div>
+                <div class='form-row'>
+                    <label for="">Ім'я</label>
+                    <input id='' type="text">
+                </div>
+                <div class='form-row'>
+                    <label for="">По-батькові</label>
+                    <input id='' type="text">
+                </div>
+                <input type="submit" value="Зареєструвати ділянку">
+                <div class="form-section">
+                    <h4>Дані про забудову</h4>
+                    <div class="form-row"><label for=""></label><input type="text"></div>
+                </div>
+        </form>
+        </div>
+        <script src='kadastr.js'></script>
+</body>
+
+</html>
