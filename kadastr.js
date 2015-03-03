@@ -91,10 +91,5 @@ function addNewLand(){
     registeredArray.push(zemDil)
 }
 
-addNewLand();
-addNewLand();
-addNewLand();
-addNewLand();
-addNewLand();
-addNewLand();
+
 console.log(registeredArray)
